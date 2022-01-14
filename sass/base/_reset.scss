@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--main-font), Arial, Helvetica, sans-serif;
+    color: var(--text-primery-color);
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+}
+
+.container-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-footer {
+    justify-content: flex-start;
+}
+
+.reset {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+}

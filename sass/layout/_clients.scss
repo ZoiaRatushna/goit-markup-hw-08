@@ -1,0 +1,34 @@
+
+//* Regular-clients */
+.clients {
+    padding-top: 92px;
+    padding-bottom: 96px;
+}
+
+.client__icon {
+    width: 170px;
+    height: 92px;
+
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-left: 15px;
+    margin-right: 15px;
+    align-items: center;
+        &:hover {
+            border: 1px solid #2196F3;
+            box-sizing: border-box;
+            } 
+} 
+
+.client__icon .client__hover {
+    display: none;
+}
+
+.client__icon:hover .client__normal {
+    display: none;
+}
+
+.client__icon:hover .client__hover {
+    display: block;
+}

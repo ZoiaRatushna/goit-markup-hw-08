@@ -1,0 +1,35 @@
+
+/* icon-social-links */
+.icon-social-links {
+    margin: 0;
+    padding-bottom: 16px;
+    max-width: 206px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+}
+
+.icons {
+    display: inline-flex;
+    padding: 12px 12px 12px 12px;
+    margin: 5px;
+    fill: #FFFFFF;
+    border-radius: 50%;
+    font-size: 1px;
+    line-height: 1;
+        &:hover {
+            background-color:var(--text-secondary-color);
+            color: #FFFFFF;}
+            & .icon-hover {
+                display: none;
+            }
+    }
+
+.icons:hover .icon {
+    display: none;
+}
+
+.icons:hover .icon-hover {
+    display: block;
+}

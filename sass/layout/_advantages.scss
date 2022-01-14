@@ -1,0 +1,56 @@
+
+/* advantages content */
+.container {
+    width: 1200px;
+}
+.advantages {
+    padding-top: 94px;
+}
+
+.advantages__list {
+    width: 270px;
+    height: 251px;
+    margin: 10px;
+        &::before {
+            content: "";
+            padding-top: 120px;
+            background: #F5F4FA;
+            border-radius: 4px;
+            display: block;
+            background-size: auto;
+            background-repeat:no-repeat;
+            background-position:center;
+        }
+}
+
+.advantages__title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}  
+
+.advantages__text {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+.icon-antenna::before {
+    background-image: url("../images/effective_solutions/icon/icon_antenna.svg");
+}
+
+.icon-clock::before {
+    background-image: url("../images/effective_solutions/icon/icon_clock.svg");
+}
+
+.icon-diagram::before {
+    background-image: url("../images/effective_solutions/icon/icon_diagram.svg");
+}
+.icon-astronaut::before {
+    background-image: url("../images/effective_solutions/icon/icon_astronaut.svg");
+}
