@@ -16,4 +16,21 @@
       refs.modal.style.display = 'flex';
       refs.modal.classList.toggle('is-hidden');
     }
+    function toggleModal() {
+      document.body.classList.toggle ('modal-open');
+      refs.modal.classList.toggle('is-hidden');
+    }
+
+    
+
+    menuBtnRef.addEventListener ("click", () => {
+      const expended = menuBtnRef.getAttribute ("aria-expended") ==="true" || false;
+    
+      menuBtnRef.classList.toggle ("is-open");
+      menuBtnRef.setAttribute("aria-expended", !expended);
+
+      mobileMenuRef.classList.toggle("is-open");
+    }
+
+    })
   })();

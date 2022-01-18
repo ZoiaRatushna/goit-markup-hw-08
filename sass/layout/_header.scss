@@ -1,5 +1,9 @@
 
 /* Webstudio navigation container */
+.header-page {
+position: relative;
+}
+
 .header 
 nav,
 ul, 
@@ -9,9 +13,10 @@ li {
 
 .header {
     width: 100%;
-    background:#FFFFFF;
     display: flex;
     flex-wrap: nowrap;
+    background:#FFFFFF;
+  
     div {
         padding: 0 15px;
         justify-content: space-between;
@@ -40,6 +45,53 @@ li {
   padding-left: 56px;
 }
 
+.menu-container {  
+left: 425px;
+top: 10px;
+    &.is-open {
+        display: block;
+
+        @media screen and (max-width:767px){
+            display: none;
+            position: absolute;
+            top: 100%;
+            left:0;
+            width: 100%;     
+        }
+    }
+}
+
+.menu-button {
+display: inline-flex;
+margin: 0;
+padding: 0;
+width: 40px;
+height: 40px;
+
+@media screen and (min-width:768px){
+    display: none;     
+}
+}
+
+.menu__button .icon-cross{
+display: none;
+}
+
+.menu__button .is-open .icon-cross {
+    display: block;
+}
+
+.menu-button .is-open .icon-menu {
+    display: none;
+}
+
+.header__navigation {
+
+}
+
+.header__contact {
+
+}
 
 /* navigation link */
 .navigation {
@@ -94,7 +146,6 @@ li {
 .contacts__link:hover .icon-hover {
 display: block;
 }
-
 
 
 
