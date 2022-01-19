@@ -67,6 +67,7 @@
     <main>    
         <!--effective solutions section-->  
         <section class= "solutions container__flex">
+            <img srcset="./images/effective_solutions/effective-solutions_bg_photo_mobile_@1x.jpg 1x, ./images/effective_solutions/effective-solutions_bg_photo_mobile_@2x.jpg 2x" src="effective-solutions_bg_photo_mobile_@1x.jpg" alt="Эффективные решения"/> <img>
             <h1 class="container reset">
                 Эффективные решения<br />для вашего бизнеса
             </h1>
@@ -482,18 +483,20 @@
  <!-- script -->   
     <script src="./js/modal.js"></script>
     <script>      
-        (() =>
-        {        
-        document          
-        .querySelector('.js-speaker-form')          
-        .addEventListener('submit', e => 
-        {            e.preventDefault();
-        new FormData(e.currentTarget).forEach((value, name) =>              
-        console.log(`${name}: ${value}`),            
-        );
-        e.currentTarget.reset();          
-        });     
-         })();    
+        (() => {        
+            const speakerForm = document.querySelector('.js-speaker-form')
+
+            if (!speakerForm) {
+                return;
+            }
+            speakerForm.addEventListener('submit', e => {
+                e.preventDefault();
+                new FormData(e.currentTarget).forEach((value, name) =>            
+                    console.log(`${name}: ${value}`),            
+                );
+                e.currentTarget.reset();          
+            }); 
+        })();    
     </script>
 </body>
 </html>

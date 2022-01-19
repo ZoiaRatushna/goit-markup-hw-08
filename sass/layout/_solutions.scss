@@ -1,8 +1,6 @@
 
 /* effective solutions container */
 .solutions {
-    padding-top: 200px;
-    padding-bottom: 200px;
     flex-direction: column;
     align-content: center;
     align-items: center;
@@ -11,29 +9,75 @@
     background-size: contain, contain;   
     background-repeat: no-repeat, no-repeat;
     background-position: center, center;
-    height: 600px;
-        h1 {
-            padding-bottom: 30px;
-            text-align: center;
-            font-style: normal;
-            font-weight: 900;
+    overflow-x: hidden;
+    @media screen and (min-width:480px){
+        width: 480px;
+        height: 400px;
+        left: 0px;
+        top: 60px;
+        padding-top: 118px;
+        padding-bottom: 128px;
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)); 
+
+        // background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/effective_solutions/effective-solutions_bg_photo_mobile_@2x.jpg");
+        // flex-direction: column;  
+    }
+    @media screen and (min-width:768px){
+        height: 400px;
+        left: 0px;
+        top: 80px;
+        padding-top: 118px;
+        padding-bottom: 128px;
+        // background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/effective_solutions/effective-solutions_bg_photo.jpg"); 
+        // flex-direction: column;  
+    }
+    @media screen and (min-width:1200px){
+        height: 600px;
+        left: 0px;
+        top: 80px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+        // background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/effective_solutions/effective-solutions_bg_photo.jpg"); 
+    }
+    h1 {
+        padding-bottom: 30px;
+        text-align: center;
+        font-style: normal;
+        font-weight: 900;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color:#FFFFFF ;
+        @media screen and (min-width:480px){
+            font-size: 26px;
+            line-height: 1.62;
+        }
+        @media screen and (min-width:768px){
+            font-size: 26px;
+            line-height: 1.62;
+        }    
+        @media screen and (min-width:1200px){
             font-size: 44px;
             line-height: 1.36;
-            letter-spacing: 0.06em;
-            text-transform: uppercase;
-            color:#FFFFFF ;
         }
-        button {
-            width: 200px;
-            height: 50px;
-            background-color: var(--text-secondary-color);
-            font-family: var(--main-font);
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 1.8;
-            color:#FFFFFF ;
-            border-radius: 4px;
-            border: none;
-            cursor: pointer;
-        }
+    }     
+    button {
+        width: 200px;
+        height: 50px;
+        background-color: var(--text-secondary-color);
+        font-family: var(--main-font);
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.8;
+        color:#FFFFFF ;
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
     }
+        
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url('./images/effective_solutions/effective-solutions_bg_photo_mobile_@2x.jpg');
+    }
+}   

@@ -1,7 +1,7 @@
 
 /* Webstudio navigation container */
 .header-page {
-position: relative;
+    position: relative;
 }
 
 .header 
@@ -42,39 +42,45 @@ li {
 }           
 
 .header .header__contacts {
-  padding-left: 56px;
+    padding-left: 56px;
 }
 
 .menu-container {  
-left: 425px;
-top: 10px;
-    &.is-open {
-        display: block;
+    left: 425px;
+    top: 10px;
 
-        @media screen and (max-width:767px){
-            display: none;
-            position: absolute;
-            top: 100%;
-            left:0;
-            width: 100%;     
-        }
+    @media screen and (max-width:767px){
+        display: none;
+        position: absolute;
+        top: 100%;
+        left:0;
+        width: 100%;  
+        &.is-open {
+            display: block;
+        }   
+    }
+
+    @media screen and (min-width:768px){
+        display:flex;
+        flex-grow: 1;
+        justify-content: space-between;
     }
 }
 
 .menu-button {
-display: inline-flex;
-margin: 0;
-padding: 0;
-width: 40px;
-height: 40px;
-
-@media screen and (min-width:768px){
-    display: none;     
-}
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    background-size: 40px 40px;
+    // width: 40px;
+    // height: 40px;
+    @media screen and (min-width:768px){
+        display: none;     
+    }
 }
 
 .menu__button .icon-cross{
-display: none;
+    display: none;
 }
 
 .menu__button .is-open .icon-cross {
@@ -92,6 +98,12 @@ display: none;
 .header__contact {
 
 }
+.header__navigation,
+.header__contact {
+    height: 40px;
+    width: 40px;
+}
+
 
 /* navigation link */
 .navigation {
@@ -125,14 +137,14 @@ display: none;
     display: flex;
     align-items: center;
     padding-top: 0;
-        span {
-            padding-left: 10px;
-            font-family: var(--main-font);
-            font-weight: 500;
-        }
-            &:hover {
-                color:var(--text-secondary-color);
-            }
+    span {
+        padding-left: 10px;
+        font-family: var(--main-font);
+        font-weight: 500;
+    }
+    &:hover {
+        color:var(--text-secondary-color);
+    }
 }
 
 .contacts__link .icon-hover {
@@ -141,11 +153,8 @@ display: none;
 
 .contacts__link:hover .icon-normal {
     display: none;
-    }
+}
  
 .contacts__link:hover .icon-hover {
-display: block;
+    display: block;
 }
-
-
-

@@ -14,7 +14,37 @@ body {
   color: var(--text-primery-color);
 }
 
-.flex-container {
+.body .modal-open {
+  overflow: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1200px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    max-width: 767px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    max-width: 1199;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
   }
 }
 
@@ -174,15 +204,6 @@ body {
           animation-duration: 750ms;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
-  overflow-y: scroll;
-}
-
-@media (min-width: 600px) {
-  .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-  }
 }
 
 .modal-window {
@@ -646,19 +667,74 @@ li {
   padding-left: 56px;
 }
 
-.container__menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  width: 40px;
-  height: 40px;
+.menu-container {
   left: 425px;
   top: 10px;
 }
 
-.container__menu.is-open {
+@media screen and (max-width: 767px) {
+  .menu-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+  .menu-container.is-open {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.menu-button {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  -webkit-background-size: 40px 40px;
+          background-size: 40px 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.menu__button .icon-cross {
+  display: none;
+}
+
+.menu__button .is-open .icon-cross {
   display: block;
+}
+
+.menu-button .is-open .icon-menu {
+  display: none;
+}
+
+.header__navigation,
+.header__contact {
+  height: 40px;
+  width: 40px;
 }
 
 /* navigation link */
@@ -729,8 +805,6 @@ li {
 
 /* effective solutions container */
 .solutions {
-  padding-top: 200px;
-  padding-bottom: 200px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -753,7 +827,42 @@ li {
           background-size: contain, contain;
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
-  height: 600px;
+  overflow-x: hidden;
+}
+
+@media screen and (min-width: 480px) {
+  .solutions {
+    width: 480px;
+    height: 400px;
+    left: 0px;
+    top: 60px;
+    padding-top: 118px;
+    padding-bottom: 128px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
+    background-image: -webkit-linear-gradient(left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    background-image: -o-linear-gradient(left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .solutions {
+    height: 400px;
+    left: 0px;
+    top: 80px;
+    padding-top: 118px;
+    padding-bottom: 128px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .solutions {
+    height: 600px;
+    left: 0px;
+    top: 80px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .solutions h1 {
@@ -761,11 +870,30 @@ li {
   text-align: center;
   font-style: normal;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #FFFFFF;
+}
+
+@media screen and (min-width: 480px) {
+  .solutions h1 {
+    font-size: 26px;
+    line-height: 1.62;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .solutions h1 {
+    font-size: 26px;
+    line-height: 1.62;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .solutions h1 {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .solutions button {
@@ -781,6 +909,12 @@ li {
           border-radius: 4px;
   border: none;
   cursor: pointer;
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .solutions {
+    background-image: url("./images/effective_solutions/effective-solutions_bg_photo_mobile_@2x.jpg");
+  }
 }
 
 /* advantages content */
