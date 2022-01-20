@@ -17,11 +17,33 @@
     <header class="header container__flex">
         <div class="container container__flex">
             <a class="header__logo reset" href="#"><span class="logo__web">Web</span><span class="logo__studio">Studio</span></a>
-            <button type="button" class="menu__button" aria-expanded="false" aria-controls="header__menu" data-menu-button></button>
+
+            <!-- Бургер -->
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                  <span></span>
+                </label>
+            
+                <ul class="menu__box">
+                  <li><a class="menu__item" href="#">Студия</a></li>
+                        <li><a class="menu__item" href="#">Портфолио</a></li>
+                        <li><a class="menu__item" href="#">Контакты</a></li>
+                        <li><a class="menu__item" href="#">info@devstudio.com</a></li>
+                        <li><a class="menu__item" href="#">+38 096 111 11 11</a></li>
+                </ul>
+              </div>
+             <!-- Бургер енд -->
+
+             
+            <!-- <button type="button" class="menu__button" aria-expanded="false" aria-controls="header__menu" data-menu-button>
              <svg width="40px" height="40px">
-                 <use class="icon-cross" href="./img/"></use>
-                 <use class="icon-menu" href="./img/"></use>
+                 <use class="icon-cross " href="./images/icons/icons.svg#/menu_24px"></use>
+                 <use class="icon-cross" href="/images/icons/icons.svg/menu_24px_blue"></use>
+                 <use class="icon-menu" href="/images/icons/icons.svg/close_24px"></use>
+                 <use class="icon-menu" href="/images/icons/icons.svg/close_24px_blue"></use>
              </svg>
+            </button>   
             <div class="menu-container is-open"  id="menu-container" data-menu> 
                 <div class="header__navigation"> 
                     <nav>
@@ -59,7 +81,7 @@
                             </a>
                         </li>
                     </ul>
-                </div>
+                </div> -->
             </div>
         </div> 
     </header> 

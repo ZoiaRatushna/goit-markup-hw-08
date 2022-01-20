@@ -16,19 +16,16 @@ img {
   }
   
  .container {
-        width: 1200px;
-
-        @media screen and (min-width: 480px)
-        {
+        width: 480px;
+        @media screen and (min-width: 480px){
             width: 480px;
             max-width: 767px;
         }
-    
         @media screen and (min-width: 768px)
         {
             width: 768px; 
-        max-width:1199;}
-    
+            max-width:1199;
+        }
         @media screen and (min-width: 1200px)
         {
             width: 1200px;
@@ -36,23 +33,68 @@ img {
     }
 
 .container__flex {
-    display: flex;
-    flex-wrap: nowrap;
     justify-content: center;
-
     margin-block-start: 0;
     margin-block-end: 0;
     padding-inline-start: 0;
+    width: 480px;
+    @media screen and (min-width: 480px){
+        width: 480px;
+        max-width: 767px;
+    }
+    @media screen and (min-width: 768px)
+    {
+        width: 768px; 
+        max-width:1199;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    @media screen and (min-width: 1200px)
+    {
+        width: 1200px;
+        display: flex;
+        flex-wrap: nowrap;
+    }
 }
 
 .container-content {
-    display: flex;
-    flex-direction: column;
     align-items: center;
+    width: 480px;
+    @media screen and (min-width: 480px){
+        width: 480px;
+        max-width: 767px;
+    }
+    @media screen and (min-width: 768px)
+    {
+        width: 768px; 
+        max-width:1199;
+        display: flex;
+        flex-direction: column;
+    }
+    @media screen and (min-width: 1200px)
+    {
+        width: 1200px;
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .container-footer {
     justify-content: flex-start;
+    width: 480px;
+    @media screen and (min-width: 480px){
+        width: 480px;
+        max-width: 767px;
+    }
+    @media screen and (min-width: 768px)
+    {
+        width: 768px; 
+        max-width:1199;
+    }
+    @media screen and (min-width: 1200px)
+    {
+        width: 1200px;
+    }
 }
 
 .reset {
