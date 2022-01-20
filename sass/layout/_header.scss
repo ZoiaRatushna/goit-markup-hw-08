@@ -54,64 +54,65 @@ li {
         padding-left: 56px;
 }
 
-.menu-container {  
-        left: 425px;
-        top: 10px;
+// до бургера........
+// .menu-container {  
+//         left: 425px;
+//         top: 10px;
 
-    @media screen and (max-width:767px){
-        display: none;
-        position: absolute;
-        top: 100%;
-        left:0;
-        width: 100%;  
-        &.is-open {
-            display: block;
-        }   
-    }
+//     @media screen and (max-width:767px){
+//         display: none;
+//         position: absolute;
+//         top: 100%;
+//         left:0;
+//         width: 100%;  
+//         &.is-open {
+//             display: block;
+//         }   
+//     }
 
-    @media screen and (min-width:768px){
-        display:flex;
-        flex-grow: 1;
-        justify-content: space-between;
-    }
-}
+//     @media screen and (min-width:768px){
+//         display:flex;
+//         flex-grow: 1;
+//         justify-content: space-between;
+//     }
+// }
 
-.menu-button {
-    display: inline-flex;
-    margin: 0;
-    padding: 0;
-    width: 40px;
-    height: 40px;
+// .menu-button {
+//     display: inline-flex;
+//     margin: 0;
+//     padding: 0;
+//     width: 40px;
+//     height: 40px;
 
-    @media screen and (min-width:768px){
-        display: none;     
-    }
-}
+//     @media screen and (min-width:768px){
+//         display: none;     
+//     }
+// }
 
-.menu__button .icon-cross{
-    display: none;
-}
+// .menu__button .icon-cross{
+//     display: none;
+// }
 
-.menu__button .is-open .icon-cross {
-    display: block;
-}
+// .menu__button .is-open .icon-cross {
+//     display: block;
+// }
 
-.menu-button .is-open .icon-menu {
-    display: none;
-}
+// .menu-button .is-open .icon-menu {
+//     display: none;
+// }
 
-.header__navigation {
+// .header__navigation {
 
-}
+// }
 
-.header__contact {
+// .header__contact {
 
-}
-.header__navigation,
-.header__contact {
+// }
+// .header__navigation,
+// .header__contact {
 
-}
-
+// }
+// до бургера энд
 
 /* navigation link */
 .navigation {
@@ -197,6 +198,7 @@ li {
     left: 425px;
     bottom: 10px;
 
+  
     width: 40px;
     height: 40px;
   
@@ -213,11 +215,9 @@ li {
     width: 100%;
     height: 2px;
   
-    // background-color: red;
-    // transition-duration: .25s;
-    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-    animation-duration: 750ms;
-    animation-iteration-count: 1;
+    background-color: #616161;
+  
+    transition-duration: .25s;
   }
   .menu__btn > span::before {
     content: '';
@@ -235,40 +235,35 @@ li {
     top: 0;
     left: -100%;
   
-    width: 480px;
-    height: 796;
+    width: 300px;
+    height: 100%;
   
     margin: 0;
     padding: 80px 0;
   
     list-style: none;
   
-    background-color: red;
+    background-color: #ECEFF1;
     box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
   
-    // transition-duration: .25s;
+    transition-duration: .25s;
   }
   
   .menu__item {
     display: block;
     padding: 12px 24px;
   
-    color: red;
+    color: #333;
   
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 47px;
-    text-align: center;
-    letter-spacing: 0.02em;
-    
-    color: #212121;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
   
     text-decoration: none;
   
     transition-duration: .25s;
   }
   .menu__item:hover {
-    background-color: blue;
+    background-color: #CFD8DC;
   }
+
