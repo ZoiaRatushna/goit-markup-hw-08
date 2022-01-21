@@ -11,20 +11,17 @@
     letter-spacing: 0.03em;
     padding-bottom: 50px;
     padding: 60px 137px 30px 137px;
-    @media screen and (min-width:480px){
-
-    }
-    @media screen and (min-width:768px){
-  
-    }    
-    @media screen and (min-width:1200px){
-        font-size: 36px;
-        line-height: 1.16;
-    }
-    @media screen and (max-width: 1199px) {
-        visibility: hidden;
-        display: none;
-      }
+        @media screen and (min-width:768px){
+    
+        }    
+        @media screen and (min-width:1200px){
+            font-size: 36px;
+            line-height: 1.16;
+        }
+        @media screen and (max-width: 1199px) {
+            visibility: hidden;
+            display: none;
+        }
 }
 
 .we-are-doing {

@@ -17,17 +17,13 @@ li {
     flex-wrap: nowrap;
     background:#FFFFFF;
     height: 60px;
-    @media screen and (min-width:480px){
-        height: 60px;
-
-    }
-    @media screen and (min-width:768px){
-        height: 80px;
-    }
-    @media screen and (min-width:1200px){
-     
-    }
-    div {
+      @media screen and (min-width:768px){
+          height: 80px;
+      }
+      @media screen and (min-width:1200px){
+      
+      }
+      div {
         padding: 0 15px;
         justify-content: space-between;
     }
@@ -50,7 +46,8 @@ li {
     }
 }           
 
-.header .header__contacts {
+.header 
+.header__contacts {
         padding-left: 56px;
 }
 
@@ -156,15 +153,18 @@ li {
     }
 }
 
-.contacts__link .icon-hover {
+.contacts__link 
+.icon-hover {
   display: none;
 }
 
-.contacts__link:hover .icon-normal {
+.contacts__link:hover 
+.icon-normal {
     display: none;
 }
  
-.contacts__link:hover .icon-hover {
+.contacts__link:hover 
+.icon-hover {
     display: block;
 }
 
