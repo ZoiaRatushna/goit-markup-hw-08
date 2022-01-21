@@ -11,7 +11,9 @@
     height: 400px;
     width: 480px;
     box-sizing: content-box;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./images/effective_solutions/effective-solutions_bg_photo_mobile_@1x.jpg"); 
+    top: 118px;
+    bottom: 128px;
+    // background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./images/effective_solutions/effective-solutions_bg_photo_mobile_@1x.jpg"); 
     @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
@@ -24,19 +26,19 @@
     @media screen and (min-width:768px){
         height: 400px;
         width: 768px;
-        // left: 0px;
-        // top: 80px;
-        padding-top: 118px;
-        padding-bottom: 128px;
+        top: 118px;
+        bottom: 128px;
+        // padding-top: 118px;
+        // padding-bottom: 128px;
 
     }
     @media screen and (min-width:1200px){
         height: 600px;
         width: 1600px;
-        left: 0px;
-        top: 80px;
-        padding-top: 200px;
-        padding-bottom: 200px;
+        bottom: 200px;
+        top: 200px;
+        // padding-top: 200px;
+        // padding-bottom: 200px;
         // background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/effective_solutions/effective-solutions_bg_photo.jpg"); 
     }
     h1 {
