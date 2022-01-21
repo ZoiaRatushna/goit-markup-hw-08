@@ -10,11 +10,19 @@
     text-align: center;
     letter-spacing: 0.03em;
     padding-bottom: 50px;
+    @media screen and (max-width: 1199px) {
+        visibility: hidden;
+        display: none;
+      }
 }
 
 .we-are-doing {
     padding-top: 94px;
     padding-bottom: 94px;
+    @media screen and (max-width: 1199px) {
+        visibility: hidden;
+        display: none;
+      }
         ul {
             margin-block-start: 0;
             margin-block-end: 0;

@@ -1137,9 +1137,23 @@ li {
   padding-bottom: 50px;
 }
 
+@media screen and (max-width: 1199px) {
+  .page-tittles {
+    visibility: hidden;
+    display: none;
+  }
+}
+
 .we-are-doing {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+@media screen and (max-width: 1199px) {
+  .we-are-doing {
+    visibility: hidden;
+    display: none;
+  }
 }
 
 .we-are-doing ul {
