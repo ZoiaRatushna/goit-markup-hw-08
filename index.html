@@ -139,8 +139,19 @@
             <!--Igor Demianenko section--> 
             <ul class="container__flex container reset">
                 <li class="command__list container-content"> 
-                    <!-- <img src="images/our_command/comanda1.jpg" alt="Igor Demianenko" width="270" height="260"> -->
-                    <img srcset="./images/our_command/comanda1@1х.jpg 1x, ./images/our_command/comanda1@2х.jpg 2x" src="./images/our_command/comanda1@1х.jpg" alt="Игорь Демьяненко"/> <img>
+                    <!-- Igor Demianenko> -->
+                    <picture>
+                        <!-- mobile -->
+                        <source media="(min-width: 480px)" width="450px" height="460px" srcset="./images/our_command/command1/comanda1_mobile@1х.jpg 1x, ./images/our_command/command1/comanda1_mobile@2х.jpg 2x" />
+                        <!-- tablet -->
+                        <source media="(min-width: 768px)" width="354px" height="374px" srcset="./images/our_command/command1/comanda1_tablet@1х.jpg 1x, ./images/our_command/command1/comanda1_tablet@2х.jpg 2x" />
+                        <!-- desktop -->
+                        <source media="(min-width: 1200px)"width="270px" height="260px" srcset="./images/our_command/command1/comanda1_desktop@1х.jpg 1x, ./images/our_command/command1/comanda1_desktop@2х.jpg 2x"/>
+                        <!-- alt -->
+                        <img src="./images/our_command/command1/comanda1.jpg" alt="Igor Demianenko" width="270" height="260">
+                    </picture>
+        
+
                     <h3 class="command__title reset">Игорь Демьяненко</h3>
                     <p class="command__text reset">Product Designer</p>
                         <ul class="icon-social-links reset">
@@ -304,7 +315,7 @@
         <section class="clients container-content"> 
             <h2 class="page-tittles container reset">Постоянные клиенты</h2>
             <ul class="reset container__flex container">
-                <li>
+                <li class="client__list">
                     <a href="#" class="client__icon container__flex">
                         <svg width="41" height="46.7">
                             <use class="client__normal" href="./images/icons/icons.svg#icon-Client1_logo"></use>

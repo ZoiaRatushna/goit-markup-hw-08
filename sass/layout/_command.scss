@@ -20,11 +20,12 @@
     height: 622px;
     @media screen and (min-width:768px){
         flex-direction:column;
-}    
+    }    
     @media screen and (min-width:1200px){
-    
-}
+        
+    }
 
+    
 }
 
 .command__title {
@@ -46,11 +47,13 @@
     padding: 60px 137px 30px 137px;
     @media screen and (min-width:768px){
   
-    }    
+    }   
     @media screen and (min-width:1200px){
         font-size: 36px;
         line-height: 1.16;
     }
+ 
+}
 
 .command__text {
     color:#757575;
