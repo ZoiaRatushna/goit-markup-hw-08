@@ -87,23 +87,24 @@
  </div>        
     <main>    
         <!--effective solutions section-->  
-        <section class= "solutions container__flex">
+        <section class= "solutions">
             <picture>
                 <!-- mobile -->
-                <source media="(min-width: 480px)" srcset="./images/effective_solutions/solutions_mobile@1x.jpg 480w 1x, ./images/effective_solutions/solutions_mobile@2x.jpg 480w 2x" />
+                <source media="(max-width: 479px)" srcset="./images/effective_solutions/solutions_mobile@1x.jpg 1x, ./images/effective_solutions/solutions_mobile@2x.jpg 2x" />
                 <!-- tablet -->
-                <source media="(min-width: 768px)" srcset="./images/effective_solutions/solutions_tablet@1x.jpg 768w 1x, ./images/effective_solutions/solutions_tablet@2x.jpg 768w 2x" />
+                <source media="(min-width: 480px) and (max-width: 1199px)" srcset="./images/effective_solutions/solutions_tablet@1x.jpg 1x, ./images/effective_solutions/solutions_tablet@2x.jpg 2x" />
                 <!-- desktop -->
-                <source media="(min-width: 1200px)" srcset="./images/effective_solutions/solutions_desktop@1x.jpg 1200w 1x, ./images/effective_solutions/solutions_desktop@1x.jpg 1200w 2x"/>
+                <source media="(min-width: 1200px)" srcset="./images/effective_solutions/solutions_desktop@1x.jpg 1x, ./images/effective_solutions/solutions_desktop@2x.jpg 2x" />
                 <!-- alt -->
                 <img src="./images/effective_solutions/effective-solutions_bg_photo.jpg" alt="effective solutions">
             </picture>   
 
-            <img srcset="./images/effective_solutions/effective-solutions_bg_photo_mobile_@1x.jpg 1x" alt="Эффективные решения"/> <img>
-            <h1 class="container reset">
-                Эффективные решения<br />для вашего бизнеса
-            </h1>
-            <button type="button" class="data-modal-open">Заказать услугу</button>    
+            <div class="solutions__text">
+                <h1 class="container reset">
+                    Эффективные решения<br />для вашего бизнеса
+                </h1>
+                <button type="button" class="data-modal-open">Заказать услугу</button>    
+            </div>
         </section> 
         <!--our advantages section-->  
         <section class="advantages container-content">
@@ -153,9 +154,9 @@
                     <!-- Igor Demianenko> -->
                     <picture>
                         <!-- mobile -->
-                        <source media="(min-width: 480px)" srcset="./images/our_command/command1/comanda1_mobile@1х.jpg 450w 1x, ./images/our_command/command1/comanda1_mobile@2х.jpg 450w 2x" />
+                        <source media="(max-width: 767px)" srcset="./images/our_command/command1/comanda1_mobile@1х.jpg 450w 1x, ./images/our_command/command1/comanda1_mobile@2х.jpg 450w 2x" />
                          <!-- tablet -->
-                         <source media="(min-width: 768px)" srcset="./images/our_command/command1/comanda1_tablet@1х.jpg 354w 1x, ./images/our_command/command1/comanda1_tablet@2х.jpg 354w 2x" />
+                         <source media="(min-width: 768px) and (max-width: 1199px)" srcset="./images/our_command/command1/comanda1_tablet@1х.jpg 354w 1x, ./images/our_command/command1/comanda1_tablet@2х.jpg 354w 2x" />
                         <!-- desktop -->
                         <source media="(min-width: 1200px)" srcset="./images/our_command/command1/comanda1_desktop@1х.jpg 370w 1x, ./images/our_command/command1/comanda1_desktop@2х.jpg 270w 2x"/>
                         <!-- alt -->
@@ -202,9 +203,9 @@
                 <li class="command__list container-content"> 
                     <picture>
                         <!-- mobile -->
-                        <source media="(min-width: 480px)" srcset="./images/our_command/command2/comanda2_mobile@1х.jpg 450w 1x, ./images/our_command/command2/comanda2_mobile@2х.jpg 450w 2x" />
+                        <source media="(max-width: 767px)" srcset="./images/our_command/command2/comanda2_mobile@1х.jpg 450w 1x, ./images/our_command/command2/comanda2_mobile@2х.jpg 450w 2x" />
                         <!-- tablet -->
-                        <source media="(min-width: 768px)" srcset="./images/our_command/command2/comanda2_tablet@1х.jpg 354w 1x, ./images/our_command/command2/comanda2_tablet@2х.jpg 354w 2x" />
+                        <source media="(min-width: 768px) and (max-width: 1199px)" srcset="./images/our_command/command2/comanda2_tablet@1х.jpg 354w 1x, ./images/our_command/command2/comanda2_tablet@2х.jpg 354w 2x" />
                         <!-- desktop -->
                         <source media="(min-width: 1200px)" srcset="./images/our_command/command2/comanda2_desktop@1х.jpg 270w 1x, ./images/our_command/command2/comanda2_desktop@2х.jpg 270w 2x"/>
                         <!-- alt -->
@@ -251,9 +252,9 @@
                 <li class="command__list container-content"> 
                     <picture>
                         <!-- mobile -->
-                        <source media="(min-width: 480px)" srcset="./images/our_command/command3/comanda3_mobile@1х.jpg 450w 1x, ./images/our_command/command3/comanda3_mobile@2х.jpg 450w 2x" />
+                        <source media="(max-width: 767px)" srcset="./images/our_command/command3/comanda3_mobile@1х.jpg 450w 1x, ./images/our_command/command3/comanda3_mobile@2х.jpg 450w 2x" />
                         <!-- tablet -->
-                        <source media="(min-width: 768px)" srcset="./images/our_command/command3/comanda3_tablet@1х.jpg 354w 1x, ./images/our_command/command3/comanda3_tablet@2х.jpg 354w 2x" />
+                        <source media="(min-width: 768px) and (max-width: 1199px)" srcset="./images/our_command/command3/comanda3_tablet@1х.jpg 354w 1x, ./images/our_command/command3/comanda3_tablet@2х.jpg 354w 2x" />
                         <!-- desktop -->
                         <source media="(min-width: 1200px)" srcset="./images/our_command/command3/comanda3_desktop@1х.jpg 270w 1x, ./images/our_command/command3/comanda3_desktop@2х.jpg 270w 2x"/>
                         <!-- alt -->
@@ -300,9 +301,9 @@
                 <li class="command__list container-content"> 
                     <picture>
                         <!-- mobile -->
-                        <source media="(min-width: 480px)" srcset="./images/our_command/command4/comanda4_mobile@1х.jpg 450w 1x, ./images/our_command/command4/comanda4_mobile@2х.jpg 450w 2x" />
+                        <source media="(max-width: 767px)" srcset="./images/our_command/command4/comanda4_mobile@1х.jpg 450w 1x, ./images/our_command/command4/comanda4_mobile@2х.jpg 450w 2x" />
                         <!-- tablet -->
-                        <source media="(min-width: 768px)" srcset="./images/our_command/command4/comanda4_tablet@1х.jpg 354w 1x, ./images/our_command/command4/comanda4_tablet@2х.jpg 354w 2x" />
+                        <source media="(min-width: 768px) and (max-width: 1199px)" srcset="./images/our_command/command4/comanda4_tablet@1х.jpg 354w 1x, ./images/our_command/command4/comanda4_tablet@2х.jpg 354w 2x" />
                         <!-- desktop -->
                         <source media="(min-width: 1200px)" srcset="./images/our_command/command4/comanda4_desktop@1х.jpg 270w 1x, ./images/our_command/command4/comanda4_desktop@2х.jpg 270w 2x"/>
                         <!-- alt -->

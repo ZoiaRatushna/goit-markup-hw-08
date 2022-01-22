@@ -20,16 +20,16 @@
     height: 622px;
     flex-direction:column;
     @media screen and (min-width:768px){
-    width: 354px;    
+        width: 354px;    
     }    
     @media screen and (min-width:1200px){
-    width: 270px;
+        width: 270px;
     }
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx){
+    // @media (min-device-pixel-ratio: 2),
+    // (min-resolution: 192dpi),
+    // (min-resolution: 2dppx){
 
-    }
+    // }
 }
 .command__list {
     picture {
@@ -40,6 +40,7 @@
             @media screen and (min-width:1200px){
             width: 270px;
         }
+    }
 }
 
 .command__title {
@@ -66,10 +67,9 @@
         font-size: 36px;
         line-height: 1.16;
     }
- 
 }
 
-.command__text {
+.command__text{
     color:#757575;
     padding-bottom: 16px;
 }
