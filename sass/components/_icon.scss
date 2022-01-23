@@ -1,4 +1,3 @@
-
 /* icon-social-links */
 .icon-social-links {
     margin: 0;
@@ -26,10 +25,12 @@
             }
     }
 
-.icons:hover .icon {
+.icons:hover 
+.icon {
     display: none;
 }
 
-.icons:hover .icon-hover {
+.icons:hover 
+.icon-hover {
     display: block;
 }

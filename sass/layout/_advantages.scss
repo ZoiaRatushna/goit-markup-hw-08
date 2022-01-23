@@ -1,32 +1,49 @@
 /* advantages content */
 .advantages {
-    padding-top: 94px;
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    ul {
+        flex-wrap: wrap;
+    }
+
+    @media screen and (max-width:767px) {
+  
+        
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+
+    }    
+    @media screen and (min-width:1200px){
+        padding-top: 94px;
+    }
 }
 
 .advantages__list {
-    width: 450px;
-    // height: 251px;
-    margin: 30px;
-    padding-left: 15px;
-    padding-right: 15px;
-        @media screen and (min-width:768px){
-        width: 354px;    
+    margin: 10px;
+    @media screen and (max-width:767px) {
+        // width: 100%;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        // width: 48%;
     }    
-        @media screen and (min-width:1200px){
-        width: 270px;
-        height: 251px;
-        margin: 10px;
-}
-        &::before {
-            content: "";
-            padding-top: 120px;
-            background: #F5F4FA;
-            border-radius: 4px;
-            display: block;
-            background-size: auto;
-            background-repeat:no-repeat;
-            background-position:center;
-        }
+    @media screen and (min-width:1200px){
+        // width: 270px;
+        // height: 251px;
+        // margin: 10px;
+        // column-count: 4;
+    }
+
+    &::before {
+        content: "";
+        padding-top: 120px;
+        background: #F5F4FA;
+        border-radius: 4px;
+        display: block;
+        background-size: auto;
+        background-repeat:no-repeat;
+        background-position:center;
+    }
 }
 
 .advantages__title {
@@ -38,12 +55,12 @@
     padding-top: 30px;
     padding-bottom: 10px;
     text-align: center;
-        @media screen and (min-width:768px){
+    @media screen and (min-width: 768px) and (max-width: 1199px){
         text-align: left;   
-        }    
-        @media screen and (min-width:1200px){
+    }    
+    @media screen and (min-width:1200px){
         text-align: left;  
-        }
+    }
 }  
 
 .advantages__text {
@@ -51,12 +68,13 @@
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: #757575;
-    width: 450px;
-    height: 50px;
-        @media screen and (min-width:768px){
+    @media screen and (max-width: 767px) {
+        width: 450px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px){
         width: 354px;
-        }    
-        @media screen and (min-width:1200px){
+    }    
+    @media screen and (min-width:1200px){
         width: 270px;
     }
 }

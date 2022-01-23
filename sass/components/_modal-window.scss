@@ -78,13 +78,16 @@
     box-sizing: border-box;
 }
 
-.data-modal-close .icon-hover {
+.data-modal-close 
+.icon-hover {
     display: none;
 }
-.data-modal-close:hover .icon-normal {
+.data-modal-close:hover 
+.icon-normal {
     display: none;
 }
-.data-modal-close:hover .icon-hover {
+.data-modal-close:hover 
+.icon-hover {
     display: block;
 }
 
@@ -164,7 +167,8 @@
     line-height: 1;
 }
 
-.icon-modal .icon-hover {
+.icon-modal 
+.icon-hover {
     display: none;
 }
 .form-input:focus + .icon-modal .icon-normal {

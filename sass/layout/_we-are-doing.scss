@@ -2,15 +2,16 @@
 /* what we are doing title */
 
 .page-tittles {
-    justify-content: center;
+    // justify-content: center;
+    // text-align: center;
     font-style: normal;
     font-weight: bold;
     font-size: 28px;
     line-height: 1.17;
-    text-align: center;
     letter-spacing: 0.03em;
     padding-bottom: 50px;
     padding: 60px 137px 30px 137px;
+    width: auto;
         @media screen and (min-width:768px){
     
         }    
@@ -21,6 +22,9 @@
         @media screen and (max-width: 1199px) {
             visibility: hidden;
             display: none;
+        }
+        h2 {
+            text-align: center;
         }
 }
 

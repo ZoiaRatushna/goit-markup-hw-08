@@ -17,18 +17,24 @@
             }
 }
 
-.footer .footer__link {
+.footer 
+.footer__link {
     color: white;
 }
 
-.footer .footer__link:hover {
+.footer 
+.footer__link:hover {
     color: var(--text-secondary-color);
 }
 
-.footer .footer__address, .footer__tel {
+.footer 
+.footer__address, 
+.footer__tel {
     color: rgba(255, 255, 255, 0.6);
 }
-.footer .footer__address:hover, .footer__tel:hover {
+.footer 
+.footer__address:hover, 
+.footer__tel:hover {
     color: var(--text-secondary-color);
 }
 
@@ -84,15 +90,18 @@
             }
     }
 
-.footer__icons .footer__hover {
+.footer__icons 
+.footer__hover {
     display: none;
 }
 
-.footer__icons:hover .footer-icon {
+.footer__icons:hover 
+.footer-icon {
     display: none;
 }
 
-.footer__icons:hover .footer__hover {
+.footer__icons:hover 
+.footer__hover {
     display: block;
 }
 

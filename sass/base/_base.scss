@@ -16,13 +16,12 @@ img {
 }
   
  .container {
-        width: 480px;
-        @media screen and (min-width: 480px){
+        
+        @media screen and (max-width: 767px){
             // width: 480px;
             // max-width: 767px;
         }
-        @media screen and (min-width: 768px)
-        {
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
             // width: 768px; 
             // max-width:1199;
         }
@@ -38,11 +37,11 @@ img {
     margin-block-end: 0;
     padding-inline-start: 0;
     // width: 480px;
-    @media screen and (min-width: 480px){
+    @media screen and (max-width: 767px){
         // width: 480px;
         // max-width: 767px;
     }
-    @media screen and (min-width: 768px)
+    @media screen and (min-width: 768px) and (max-width: 1199px)
     {
         // width: 768px; 
         // max-width:1199;
@@ -60,12 +59,11 @@ img {
 .container-content {
     align-items: center;
     // width: 480px;
-    @media screen and (min-width: 480px){
+    @media screen and (max-width: 767px){
         // width: 480px;
         // max-width: 767px;
     }
-    @media screen and (min-width: 768px)
-    {
+    @media screen and (min-width: 768px) and (max-width: 1199px){
         // width: 768px; 
         // max-width:1199;
         display: flex;
@@ -82,11 +80,11 @@ img {
 .container-footer {
     justify-content: flex-start;
     // width: 480px;
-    @media screen and (min-width: 480px){
+    @media screen and (max-width: 767px){
         // width: 480px;
         // max-width: 767px;
     }
-    @media screen and (min-width: 768px)
+    @media screen and (min-width: 768px) and (max-width: 1199px)
     {
         // width: 768px; 
         // max-width:1199;
