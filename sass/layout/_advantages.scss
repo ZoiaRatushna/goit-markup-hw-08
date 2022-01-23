@@ -68,7 +68,10 @@
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: #757575;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 479px) {
+        width: 90%;
+    }
+    @media screen and (min-width: 480px)  and (max-width: 767px) {
         width: 450px;
     }
     @media screen and (min-width: 768px) and (max-width: 1199px){

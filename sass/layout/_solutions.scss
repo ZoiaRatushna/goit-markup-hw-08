@@ -10,28 +10,25 @@
     background-position: center, center;
     height: 400px;
     box-sizing: content-box;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)); 
-        @media screen and (min-device-pixel-ratio: 2),
-            screen and (min-resolution: 192dpi),
-            screen and (min-resolution: 2dppx) {
-                background-image: url("solutions_mobile@2x.jpg,
-                solutions_tablet@2x.jpg,
-                solutions_desktop@2x.jpg ");    
-        }
-        @media screen and (max-width:767px){
-
-        }
-        @media screen and (min-width: 768px) and (max-width: 1199px) {
-
-        }
-
-        @media screen and (min-width:1200px){
-            height: 600px;
-        }  
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));  
+    @media screen and (min-width:1200px){
+        height: 600px;
+    }
     picture {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
+        @media screen and (min-width:1200px){
+            // clip: rect(0px, 370px, 294px, 0px);
+            width: 100%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+    }
+    img {
+        @media screen and (min-width:1200px){
+            width: 100%;
+        }
     }
     .solutions__text {
         position: absolute;

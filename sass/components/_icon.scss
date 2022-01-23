@@ -2,7 +2,6 @@
 .icon-social-links {
     margin: 0;
     padding-bottom: 16px;
-    max-width: 206px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,13 +16,13 @@
     border-radius: 50%;
     font-size: 1px;
     line-height: 1;
-        &:hover {
-            background-color:var(--text-secondary-color);
-            color: #FFFFFF;}
-            & .icon-hover {
-                display: none;
-            }
-    }
+    &:hover {
+        background-color:var(--text-secondary-color);
+        color: #FFFFFF;}
+        & .icon-hover {
+            display: none;
+        }
+}
 
 .icons:hover 
 .icon {

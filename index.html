@@ -116,16 +116,17 @@
         <section class="command container-content">
             <h2 class="command__titles container reset">Наша команда</h2>
             <!--Igor Demianenko section--> 
-            <ul class="container__flex container reset">
+            <ul class="command__group container__flex container reset">
                 <li class="command__list container-content"> 
                     <!-- Igor Demianenko> -->
                     <picture>
                         <!-- desktop -->
                         <source media="(min-width: 1200px)" srcset="./images/our_command/command1/comanda1_desktop@1х.jpg 1x, ./images/our_command/command1/comanda1_desktop@2х.jpg 2x"/>
                           <!-- tablet -->
-                          <source media="(min-width: 768px) and (max-width: 1199px)" srcset="./images/our_command/command1/comanda1_tablet@1х.jpg 1x, ./images/our_command/command1/comanda1_tablet@2х.jpg 2x" />
+                        <source media="(min-width: 768px) and (max-width: 1199px)" srcset="./images/our_command/command1/comanda1_tablet@1х.jpg 1x, ./images/our_command/command1/comanda1_tablet@2х.jpg 2x" />
                         <!-- mobile -->
-                        <source media="(max-width: 767px)" srcset="./images/our_command/command1/comanda1_mobile@1х.jpg 1x, ./images/our_command/command1/comanda1_mobile@2х.jpg 2x" />
+                        <source media="(min-width: 480px) and (max-width: 767px)" srcset="./images/our_command/command1/comanda1_mobile@1х.jpg 1x, ./images/our_command/command1/comanda1_mobile@2х.jpg 2x" />
+                        <source media="(max-width: 479px)" srcset="./images/our_command/command1/comanda1_desktop@1х.jpg 1x, ./images/our_command/command1/comanda1_desktop@2х.jpg 2x"/>
                         <!-- alt -->
                         <img src="./images/our_command/command1/comanda1.jpg" alt="Igor Demianenko">
                     </picture>
@@ -174,7 +175,8 @@
                         <!-- tablet -->
                         <source media="(min-width: 768px) and (max-width: 1199px)" srcset="./images/our_command/command2/comanda2_tablet@1х.jpg 1x, ./images/our_command/command2/comanda2_tablet@2х.jpg 2x"/>
                         <!-- mobile -->
-                        <source media="(max-width: 767px)" srcset="./images/our_command/command2/comanda2_mobile@1х.jpg 1x, ./images/our_command/command2/comanda2_mobile@2х.jpg 2x"/>
+                        <source media="(min-width: 480px) and (max-width: 767px)" srcset="./images/our_command/command2/comanda2_mobile@1х.jpg 1x, ./images/our_command/command2/comanda2_mobile@2х.jpg 2x"/>
+                        <source media="(max-width: 479px)" srcset="./images/our_command/command2/comanda2_desktop@1х.jpg 1x, ./images/our_command/command2/comanda2_desktop@2х.jpg 2x"/>
                         <!-- alt -->
                         <img src="./images/our_command/command2/comanda2.jpg" alt="Olga Repina">
                     </picture>
@@ -223,7 +225,8 @@
                         <!-- tablet -->
                         <source media="(min-width: 768px) and (max-width: 1199px)" srcset="./images/our_command/command3/comanda3_tablet@1х.jpg 1x, ./images/our_command/command3/comanda3_tablet@2х.jpg 2x" />
                         <!-- mobile -->
-                        <source media="(max-width: 767px)" srcset="./images/our_command/command3/comanda3_mobile@1х.jpg 1x, ./images/our_command/command3/comanda3_mobile@2х.jpg 2x" />
+                        <source media="(min-width: 480px) and (max-width: 767px)" srcset="./images/our_command/command3/comanda3_mobile@1х.jpg 1x, ./images/our_command/command3/comanda3_mobile@2х.jpg 2x" />
+                        <source media="(max-width: 479px)" srcset="./images/our_command/command3/comanda3_desktop@1х.jpg 1x, ./images/our_command/command3/comanda3_desktop@2х.jpg 2x"/>
                         <!-- alt -->
                         <img src="./images/our_command/command3/comanda3.jpg" alt="Nikolai Tarasov">
                     </picture>              
@@ -272,7 +275,8 @@
                         <!-- tablet -->
                         <source media="(min-width: 768px) and (max-width: 1199px)" srcset="./images/our_command/command4/comanda4_tablet@1х.jpg 1x, ./images/our_command/command4/comanda4_tablet@2х.jpg 2x"/>
                         <!-- mobile -->
-                        <source media="(max-width: 767px)" srcset="./images/our_command/command4/comanda4_mobile@1х.jpg 1x, ./images/our_command/command4/comanda4_mobile@2х.jpg 2x"/>
+                        <source media="(min-width: 480px) and (max-width: 767px)" srcset="./images/our_command/command4/comanda4_mobile@1х.jpg 1x, ./images/our_command/command4/comanda4_mobile@2х.jpg 2x"/>
+                        <source media="(max-width: 479px)" srcset="./images/our_command/command4/comanda4_desktop@1х.jpg 1x, ./images/our_command/command4/comanda4_desktop@2х.jpg 2x"/>
                         <!-- alt -->
                         <img src="./images/our_command/command4/comanda4.jpg" alt="Mikhail Ermakov">
                     </picture>   
@@ -327,7 +331,7 @@
                         </svg>
                     </a>
                 </li>
-                <li>
+                <li class="client__list">
                     <a href="#" class="client__icon container__flex">
                         <svg width="40" height="52">
                             <use class="client__normal" href="./images/icons/icons.svg#icon-Client2_logo"></use>
@@ -335,7 +339,7 @@
                         </svg>
                     </a>
                 </li>
-                <li>
+                <li class="client__list">
                     <a href="#" class="client__icon container__flex">
                         <svg width="43.46" height="41.18">
                             <use class="client__normal" href="./images/icons/icons.svg#icon-Client3_logo"></use>
@@ -343,7 +347,7 @@
                         </svg>
                     </a>
                 </li>
-                <li>
+                <li class="client__list">
                     <a href="#" class="client__icon container__flex">
                         <svg width="84.44" height="40.62">
                             <use class="client__normal" href="./images/icons/icons.svg#icon-Client4_logo"></use>
@@ -351,7 +355,7 @@
                         </svg>
                     </a>
                 </li>
-                <li>
+                <li class="client__list">
                     <a href="#" class="client__icon container__flex">
                         <svg width="62.54" height="45.43">
                             <use class="client__normal" href="./images/icons/icons.svg#icon-Client5_logo"></use>
@@ -359,7 +363,7 @@
                         </svg>
                     </a>
                 </li>
-                <li>
+                <li class="client__list">
                     <a href="#" class="client__icon container__flex">
                         <svg width="93.79" height="43.93">
                             <use class="client__normal" href="./images/icons/icons.svg#icon-Client6_logo"></use>
