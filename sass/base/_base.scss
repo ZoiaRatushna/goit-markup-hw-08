@@ -11,7 +11,6 @@ body {
 
 img {
     display: block;
-    // max-width: 100%;
     height: auto;
 }
   
@@ -38,7 +37,7 @@ img {
     padding-inline-start: 0;
     display: flex;
     @media screen and (max-width: 767px){
-        
+        flex-wrap: wrap;
     }
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         flex-wrap: nowrap;
@@ -50,40 +49,32 @@ img {
 
 .container-content {
     align-items: center;
-    // width: 480px;
+    
     @media screen and (max-width: 767px){
-        // width: 480px;
-        // max-width: 767px;
+
     }
     @media screen and (min-width: 768px) and (max-width: 1199px){
-        // width: 768px; 
-        // max-width:1199;
         display: flex;
         flex-direction: column;
     }
-    @media screen and (min-width: 1200px)
-    {
-        // width: 1200px;
+    @media screen and (min-width: 1200px){
         display: flex;
         flex-direction: column;
     }
 }
 
 .container-footer {
-    justify-content: flex-start;
-    // width: 480px;
+    
+    
     @media screen and (max-width: 767px){
-        // width: 480px;
-        // max-width: 767px;
+        justify-content: center;
+        flex-direction: column;
     }
-    @media screen and (min-width: 768px) and (max-width: 1199px)
-    {
-        // width: 768px; 
-        // max-width:1199;
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        justify-content: flex-start;
     }
-    @media screen and (min-width: 1200px)
-    {
-        // width: 1200px;
+    @media screen and (min-width: 1200px){
+        justify-content: flex-start;
     }
 }
 

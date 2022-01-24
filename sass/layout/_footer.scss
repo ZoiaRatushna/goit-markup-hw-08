@@ -9,6 +9,7 @@
         address {
             padding-top: 20px;
             padding-bottom: 60px;
+            vertical-align: top;
             }
         ul {
             font-style: normal;
@@ -107,8 +108,7 @@
 
 /* footer-subscribe*/
 .subscribe {
-    display: none;
-    // display: flex;
+    display: flex;
     padding-top: 72px;
     padding-left: 93px;
     flex-direction: column;

@@ -14,7 +14,16 @@
 <body>
      <!--header section-->
     <header class="header flex-container">
-        <div class="container flex-container">
+        <div class="container flex-container reset header__mobile">
+            <a class="header__logo reset" href="#"><span class="logo__web">Web</span><span class="logo__studio">Studio</span></a>
+            <!-- header mobile menu-burger- -->
+        <div class="menu__btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        </div>
+        <div class="container flex-container reset header__desctop">
             <a class="header__logo reset" href="#"><span class="logo__web">Web</span><span class="logo__studio">Studio</span></a>
             <nav>
                 <ul class="header__links reset">
@@ -51,26 +60,26 @@
                 </li>
             </ul>
         </div> 
-              <!-- header mobile menu-burger- -->
-            <div class="menu__btn">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </header> 
-        <div class="menu">
-            <nav>
+    </header> 
+    <div class="menu">
+        <nav>
+            <ul class="menu__studia">
                 <li> <a href="#">Cтудия</a></li>
-                <li> <a href="#">Портфолио</a></li>
+                <li> <a href="./portfolio.html">Портфолио</a></li>
                 <li><a href="#">Контакты</a></li>
+            </ul>
+            <ul class="menu__contacts">
                 <li>+38 096 111 11 11</li>
                 <li>info@devstudio.com</li>
+            </ul>    
+            <ul class="menu__social">               
                 <li><a href="#">Instagram </a></li>
                 <li><a href="#">Twitter </a> </li>
                 <li><a href="#">Facebook </a></li>
                 <li><a href="#">LinkedIn </a></li> 
-            </nav>        
-        </div>                    
+            </ul>
+        </nav>        
+    </div>                    
     <main>  
         <!--effective solutions section-->  
         <section class= "solutions">
