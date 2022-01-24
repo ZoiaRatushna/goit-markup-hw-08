@@ -13,55 +13,65 @@
 </head>
 <body>
      <!--header section-->
-     <header class="header flex-container">
+    <header class="header flex-container">
         <div class="container flex-container">
             <a class="header__logo reset" href="#"><span class="logo__web">Web</span><span class="logo__studio">Studio</span></a>
-        <!-- burger-menu -->
-           <div class="menu-btn">
-               <span></span>
-               <span></span>
-               <span></span>
-           </div>
-           <!-- burger-menu + navigation -->
-           <div class="menu">
-                <nav>
-                    <ul class="header__links reset">
-                        <li> 
-                            <a class="navigation navigation__active" href="#">Студия</a> 
-                        </li>   
-                        <li>    
-                            <a class="navigation" href="./portfolio.html">Портфолио</a>
-                        </li>   
-                        <li> 
-                            <a class="navigation" href="#">Контакты</a>
-                        </li>       
-                    </ul>
-                    <!-- contacts section--> 
-                    <ul class="header__contacts reset">
-                        <li>
-                            <a class="contacts__link" href="mailto:info@devstudio.com">
-                                <svg width="16px" height="12px">
-                                    <use class="icon-normal" href="./images/icons/icons.svg#icon-e-mail2"></use>
-                                    <use class="icon-hover" href="./images/icons/icons.svg#icon-e-mail1"></use>
-                                </svg>
-                                <span>info@devstudio.com</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="contacts__link" href="tel:+380961111111">
-                                <svg width="10px" height="16px">
-                                    <use class="icon-normal" href="./images/icons/icons.svg#icon-smartphone2"></use>
-                                    <use class="icon-hover" href="./images/icons/icons.svg#icon-smartphone1"></use>
-                                </svg>
-                                <span>+38 096 111 11 11</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>    
-            </div>
+            <nav>
+                <ul class="header__links reset">
+                    <li> 
+                        <a class="navigation navigation__active" href="#">Студия</a> 
+                    </li>   
+                    <li>    
+                        <a class="navigation" href="./portfolio.html">Портфолио</a>
+                    </li>   
+                    <li> 
+                        <a class="navigation" href="#">Контакты</a>
+                    </li>       
+                </ul>
+            </nav>
+            <!-- contacts section--> 
+            <ul class="header__contacts reset">
+                <li>
+                    <a class="contacts__link" href="mailto:info@devstudio.com">
+                        <svg width="16px" height="12px">
+                            <use class="icon-normal" href="./images/icons/icons.svg#icon-e-mail2"></use>
+                            <use class="icon-hover" href="./images/icons/icons.svg#icon-e-mail1"></use>
+                        </svg>
+                        <span>info@devstudio.com</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="contacts__link" href="tel:+380961111111">
+                        <svg width="10px" height="16px">
+                            <use class="icon-normal" href="./images/icons/icons.svg#icon-smartphone2"></use>
+                            <use class="icon-hover" href="./images/icons/icons.svg#icon-smartphone1"></use>
+                        </svg>
+                        <span>+38 096 111 11 11</span>
+                    </a>
+                </li>
+            </ul>
         </div> 
-    </header>         
-    <main>    
+              <!-- header mobile menu-burger- -->
+            <div class="menu__btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </header> 
+        <div class="menu">
+            <nav>
+                <li> <a href="#">Cтудия</a></li>
+                <li> <a href="#">Портфолио</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li>+38 096 111 11 11</li>
+                <li>info@devstudio.com</li>
+                <li><a href="#">Instagram </a></li>
+                <li><a href="#">Twitter </a> </li>
+                <li><a href="#">Facebook </a></li>
+                <li><a href="#">LinkedIn </a></li> 
+            </nav>        
+        </div>                    
+    <main>  
         <!--effective solutions section-->  
         <section class= "solutions">
             <picture>
@@ -383,7 +393,7 @@
             </ul> 
         </section>
     </main>
-<!-- footer -->
+    <!-- footer -->
     <footer class="container footer container__flex"> 
         <div class="container container__flex container-footer">
             <div class="reset footer__contacts">
@@ -532,6 +542,7 @@
     </div>
  <!-- script -->   
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
     <script>      
         (() => {        
             const speakerForm = document.querySelector('.js-speaker-form')
