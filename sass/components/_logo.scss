@@ -17,7 +17,12 @@
     line-height: 1.27;
     letter-spacing: 0.03em;
     color: #000000;
-    padding-right: 88px;
+    @media screen and (max-width: 1199px){
+        padding-right: 0;
+    }
+    @media screen and (min-width: 1200px){
+        padding-right: 88px;
+    }
 }
 .logo__webstudio {
     color: white;

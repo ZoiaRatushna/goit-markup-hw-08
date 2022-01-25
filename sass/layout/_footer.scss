@@ -3,19 +3,59 @@
 .footer {
     width: 100%;
     background: #2F303A;
-        a {
-            text-decoration: none;
-            }
-        address {
-            padding-top: 20px;
+    a {
+        text-decoration: none;
+        }
+    address {
+        padding-top: 20px;
+        vertical-align: top;
+        @media screen and (max-width: 1199px){
+            padding-bottom: 0;
+        }
+        @media screen and (min-width: 1200px){
             padding-bottom: 60px;
-            vertical-align: top;
-            }
-        ul {
-            font-style: normal;
-            font-weight: normal;
-            color: #FFFFFF;
-            }
+        }
+    }
+    ul {
+        font-style: normal;
+        font-weight: normal;
+        color: #FFFFFF;
+    }
+}
+
+.footer__desctop {
+    @media screen and (max-width: 1199px){
+        display: none;
+    }
+    @media screen and (min-width: 1200px){
+        display: flex;
+    }
+}
+
+.footer__mobile {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    @media screen and (max-width: 1199px){
+        display: flex;
+    }
+    @media screen and (min-width: 1200px){
+        display: none;
+    }
+}
+
+.footer__connecting {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 479px){
+        flex-direction: column;
+    }   
+    @media screen and (min-width: 480px) and (max-width: 1199px){
+        justify-content: center;
+    }    
 }
 
 .footer 
@@ -41,20 +81,34 @@
 
 .footer__contacts {
     padding-top: 60px;
-        ul {
-            font-size: 14px;
-            line-height: 1.7;
-            letter-spacing: 0.03em;
-            }
-        li {
-            display: block;
-            padding-bottom: 9px;
-            }
+    ul {
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+        }
+    li {
+        display: block;
+        padding-bottom: 9px;
+    }
+
+    @media screen and (max-width: 1199px){
+        text-align: center;
+    }
 }
 
 .footer__connect {
-    padding-left: 65px;
-    padding-top: 72px;
+    @media screen and (max-width: 479px){
+        padding-left: 0;
+        padding-top: 72px;
+    }
+    @media screen and (min-width: 480px) and (max-width: 1199px){
+        padding-left: 30px;
+        padding-top: 72px;
+    }
+    @media screen and (min-width: 1200px){
+        padding-left: 65px;
+        padding-top: 72px;
+    }
 }
 
 /* footer__links */
@@ -77,6 +131,9 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     color: #FFFFFF;
+    @media screen and (max-width: 1199px){
+        justify-content: center;
+    }
 }
 
 .footer__icons {
@@ -85,11 +142,11 @@
     margin: 5px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
-        &:hover {
-            background-color:var(--text-secondary-color);
-            color: rgba(255, 255, 255, 0.1);
-            }
+    &:hover {
+        background-color:var(--text-secondary-color);
+        color: rgba(255, 255, 255, 0.1);
     }
+}
 
 .footer__icons 
 .footer__hover {
@@ -113,10 +170,20 @@
     padding-left: 93px;
     flex-direction: column;
     align-items: flex-start;
+
+    @media screen and (max-width: 1199px){
+        padding-top: 0;
+        padding-left: 0;
+        align-items: center;
+    }
 }
 
 .subscribe__form {
     display: flex;
+    @media screen and (max-width: 1199px){
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .subscribe__text {
@@ -146,12 +213,24 @@
     border-radius: 4px;
     font-family: var(--main-font);
     background: #2F303A;
+
+    @media screen and (max-width: 479px){
+        width: 90%;
+    } 
+    @media screen and (min-width: 480px) and (max-width: 767px){
+        width: 450px;
+    } 
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        width: 450px;              
+    }
+    @media screen and (min-width: 1200px){
+        width: 358px;
+    }
 }
 
 .subscribe__button {
     width: 200px;
     height: 50px;
-    margin-left: 12px;
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -165,6 +244,13 @@
     color: #FFFFFF;
     cursor: pointer;
     border: none;
+
+    @media screen and (max-width: 1199px){
+        margin-left: 0;
+    }
+    @media screen and (min-width: 1200px){
+        margin-left: 12px;
+    }
 }
 
 .subscribe__icon {
