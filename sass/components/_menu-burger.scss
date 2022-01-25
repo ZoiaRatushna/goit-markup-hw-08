@@ -1,10 +1,10 @@
 
 .menu__btn {
-  top: 0;
-  left: 0;
+  top: 8px;
+  right: 8px;
   width: 40px;
   height: 40px;
-  position: relative;
+  position: absolute;
   z-index: 2;
   overflow: hidden;
 
@@ -25,10 +25,14 @@
   transform: translate(-50%, -50%);
   background-color: var(--text-primery-color);
   transition: all var(--cubic-transition);
-  span:hover {
+}
+
+.menu__btn:hover {
+  span {
     background-color: var( --text-secondary-color);
   }
 }
+
 
 .menu__btn span:nth-of-type(2) {
   top: calc(50% - 5px);
@@ -43,11 +47,13 @@
   left: 0;
   width: 100%;
   height: 0;
-  padding: 15px;
+  padding: 0;
   background-color: #FFFFFF;
   transform: translatex(-100%);
   transition: var(--cubic-transition);
-
+  nav {
+    height: 100%;
+  }
   @media screen and (max-width: 767px){
     display: block;
   }
@@ -59,12 +65,12 @@
 .menu.active {
   top: 0;
   transform: translateX(0);
-  width: 480px;
-  height: 796px;
+  width: 100%;
+  height: calc(100vh - 60px);
   background: #FFFFFF;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
   transition: all var(--cubic-transition);
-  }
+}
 
 .menu__studia {
   column-count: 1;
@@ -105,6 +111,8 @@
   column-count: 1;
   text-decoration: none;
   left: 40px;
+  bottom: 10px;
+  position: absolute;
   a {
     text-decoration:none;
     color: var(--text-secondary-color);
@@ -132,4 +140,8 @@
 .menu__btn.active span:nth-of-type(3) {
   top: 50%;
   transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.globalHide {
+  display: none;
 }

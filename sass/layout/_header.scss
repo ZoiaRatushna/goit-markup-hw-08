@@ -37,6 +37,9 @@ li {
         @media screen and (max-width: 768px){
             display: flex;
         }
+        .header__logo {
+            padding-top: 16px;
+        }
     }
     div {
         padding: 0 15px;
