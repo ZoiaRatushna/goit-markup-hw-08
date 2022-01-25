@@ -790,6 +790,7 @@ img {
   width: 40px;
   height: 40px;
   position: absolute;
+  z-index: 2;
   overflow: hidden;
 }
 
@@ -928,6 +929,15 @@ img {
   left: 40px;
   bottom: 144px;
   position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .menu__contacts li {

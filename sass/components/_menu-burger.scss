@@ -5,6 +5,7 @@
   width: 40px;
   height: 40px;
   position: absolute;
+  z-index: 2;
   overflow: hidden;
 
   @media screen and (max-width: 767px){
@@ -104,6 +105,8 @@
   left: 40px;
   bottom: 144px;
   position: absolute;
+  display: flex;
+  flex-direction: column;
   li {
     font-family: var(--main-font);
     font-weight: 500;
