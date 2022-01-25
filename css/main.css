@@ -668,7 +668,7 @@ img {
 }
 
 .menu__btn {
-  top: 8px;
+  top: 13px;
   right: 8px;
   width: 40px;
   height: 40px;
@@ -755,14 +755,12 @@ img {
       -ms-transform: translateX(0);
           transform: translateX(0);
   width: 100%;
-  height: -webkit-calc(100vh - 60px);
-  height: calc(100vh - 60px);
+  height: 100%;
   background: #FFFFFF;
-  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
   -webkit-transition: all var(--cubic-transition);
   -o-transition: all var(--cubic-transition);
   transition: all var(--cubic-transition);
+  position: absolute;
 }
 
 .menu__studia {
@@ -771,18 +769,40 @@ img {
           column-count: 1;
   left: 40px;
   top: 48px;
+  position: absolute;
   font-family: var(--main-font);
+  font-style: normal;
   font-weight: 500;
   font-size: 40px;
-  line-height: 1.18;
-  text-align: start;
+  line-height: 1.175;
   letter-spacing: 0.02em;
+  color: #212121;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu__studia .menu__activeLink {
+  color: #2196F3;
+}
+
+.menu__studia li {
+  padding-bottom: 35px;
 }
 
 .menu__studia a {
   text-decoration: none;
   color: var(--text-primery-color);
-  margin: 36px;
 }
 
 .menu__contacts {
@@ -790,6 +810,8 @@ img {
      -moz-column-count: 1;
           column-count: 1;
   left: 40px;
+  bottom: 144px;
+  position: absolute;
 }
 
 .menu__contacts li {
@@ -801,14 +823,47 @@ img {
   letter-spacing: 0.02em;
 }
 
+.menu__contacts .menu__phone {
+  padding-bottom: 42px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+}
+
+.menu__contacts .menu__mail {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
 .menu__social {
   -webkit-column-count: 1;
      -moz-column-count: 1;
           column-count: 1;
   text-decoration: none;
   left: 40px;
-  bottom: 10px;
+  bottom: 48px;
   position: absolute;
+}
+
+.menu__social li {
+  padding-right: 10px;
+}
+
+.menu__social .withBorder {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.menu__social .leftSpace {
+  padding-left: 10px;
 }
 
 .menu__social a {
@@ -906,6 +961,14 @@ li {
   }
 }
 
+@media screen and (min-width: 480px) {
+  .header .header__desctop .header__logo {
+    padding-top: 26px;
+    padding-left: 16px;
+    padding-bottom: 26px;
+  }
+}
+
 .header .header__mobile {
   width: 100%;
   display: none;
@@ -915,7 +978,7 @@ li {
           justify-content: space-between;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .header .header__mobile {
     display: -webkit-box;
     display: -webkit-flex;
@@ -924,12 +987,15 @@ li {
   }
 }
 
-.header .header__mobile .header__logo {
-  padding-top: 16px;
+@media screen and (max-width: 768px) {
+  .header .header__mobile .header__logo {
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-bottom: 16px;
+  }
 }
 
 .header div {
-  padding: 0 15px;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
@@ -964,15 +1030,12 @@ li {
   }
 }
 
-.header .header__logo {
-  padding-top: 23px;
-  padding-bottom: 24px;
-}
-
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .header
 .header__contacts {
-    padding-left: 26px;
+    padding-left: 84px;
+    padding-top: 21px;
+    padding-bottom: 21px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1071,6 +1134,13 @@ li {
 .contacts__link:hover
 .icon-hover {
   display: block;
+}
+
+@media screen and (max-width: 1199px) {
+  .contacts__mail {
+    padding-bottom: 10px;
+    padding-right: 15px;
+  }
 }
 
 /* effective solutions container */
