@@ -1480,6 +1480,13 @@ li {
   display: block;
 }
 
+@media screen and (max-width: 767px) {
+  .clients .page-tittles {
+    padding: 0;
+    padding-bottom: 30px;
+  }
+}
+
 .clients ul {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1837,6 +1844,12 @@ li {
   background: #2F303A;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer {
+    height: 252px;
+  }
+}
+
 .footer a {
   text-decoration: none;
 }
@@ -1975,6 +1988,13 @@ li {
   padding-bottom: 9px;
 }
 
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .footer__contacts {
+    padding-left: 76px;
+    padding-right: 163px;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .footer__contacts {
     text-align: center;
@@ -1984,20 +2004,19 @@ li {
 @media screen and (max-width: 479px) {
   .footer__connect {
     padding-left: 0;
-    padding-top: 72px;
+    padding-top: 60px;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 1199px) {
   .footer__connect {
-    padding-left: 30px;
     padding-top: 72px;
+    padding-right: 89px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .footer__connect {
-    padding-left: 65px;
     padding-top: 72px;
   }
 }
@@ -2083,20 +2102,23 @@ li {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 72px;
   padding-left: 93px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-          align-items: flex-start;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 479px) {
+  .subscribe {
+    padding-top: 0;
+    padding-left: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .subscribe {
     padding-top: 0;
     padding-left: 0;
@@ -2112,6 +2134,12 @@ li {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (max-width: 479px) {
+  .subscribe__form {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -2135,6 +2163,15 @@ li {
   text-transform: uppercase;
   color: #FFFFFF;
   padding-bottom: 20px;
+  padding-top: 60px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe__text {
+    padding-top: 72px;
+    text-align: left;
+  }
 }
 
 .subscribe__input {
@@ -2192,6 +2229,7 @@ li {
 .subscribe__button {
   width: 200px;
   height: 50px;
+  margin-bottom: 60px;
   background: #2196F3;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -2217,6 +2255,12 @@ li {
 
 @media screen and (max-width: 1199px) {
   .subscribe__button {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .subscribe__button {
     margin-left: 0;
   }
 }
@@ -2224,6 +2268,7 @@ li {
 @media screen and (min-width: 1200px) {
   .subscribe__button {
     margin-left: 12px;
+    margin-bottom: 94px;
   }
 }
 

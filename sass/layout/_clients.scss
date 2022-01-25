@@ -3,6 +3,11 @@
     .page-tittles {
         visibility: visible;
         display: block;
+
+        @media screen and (max-width: 767px){
+            padding: 0;
+            padding-bottom: 30px;
+        } 
     }
 
     ul {
