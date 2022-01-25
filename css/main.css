@@ -2230,8 +2230,8 @@ li {
 
 @media screen and (min-width: 480px) and (max-width: 1199px) {
   .footer__contacts {
-    padding-left: 76px;
-    padding-right: 163px;
+    padding-right: -webkit-calc(5vw);
+    padding-right: calc(5vw);
   }
 }
 
@@ -2251,7 +2251,8 @@ li {
 @media screen and (min-width: 480px) and (max-width: 1199px) {
   .footer__connect {
     padding-top: 72px;
-    padding-right: 89px;
+    padding-left: -webkit-calc(5vw);
+    padding-left: calc(5vw);
   }
 }
 

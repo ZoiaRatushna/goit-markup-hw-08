@@ -95,8 +95,7 @@
     }
 
     @media screen and (min-width: 480px) and (max-width: 1199px){
-        padding-left: 76px;
-        padding-right: 163px;
+        padding-right: calc(5vw);
     }
 
     @media screen and (max-width: 1199px){
@@ -111,7 +110,7 @@
     }
     @media screen and (min-width: 480px) and (max-width: 1199px){
         padding-top: 72px;
-        padding-right: 89px;
+        padding-left: calc(5vw);
     }
     @media screen and (min-width: 1200px){
         padding-top: 72px;
