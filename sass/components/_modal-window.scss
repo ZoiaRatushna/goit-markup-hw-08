@@ -14,7 +14,7 @@
     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
     animation-duration: 750ms;
     animation-iteration-count: 1;
-    }
+}
 
 .modal-window {
     cursor: auto;
@@ -32,17 +32,27 @@
     animation-duration: 750ms;
     animation-iteration-count: 1;
 
-    // overflow-y: scroll;
+    form {
+        @media screen and (max-width: 1199px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
 
-    // @media (min-width:480px) {
-    //     height: 609px;  
-    //     max-width: 450px;
-    //     width: 100%;
-    //     position: absolute;   
-    //     top: 50%;
-    //     left: 50%;
-    //     transform: translate(-50%, -50%);
-    // }
+    @media screen and (max-width: 479px) {
+        max-width: 90%;
+        max-height: 90%;
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+        width: 450px;
+        height: 609px;
+    }
+}
+
+.lockScroll {
+    overflow: hidden;
 }
 
 .is-hidden {
@@ -100,6 +110,13 @@
     color: var(--text-primery-color);
     padding-top: 40px;
     padding-bottom: 12px;
+
+    @media screen and (max-width: 479px) {
+        max-width: 80%;
+    }
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+        width: 370px;
+    }
 }
 
 .form {
@@ -149,9 +166,15 @@
     height: 40px;
     background: #FFFFFF;
     box-shadow: none;
-        &:focus {
-            border: 1px solid #2196F3;
-        }
+    &:focus {
+        border: 1px solid #2196F3;
+    }
+    @media screen and (max-width: 479px) {
+        width: calc(80vw);
+    }
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+        width: 370px;
+    }
 }
 
 .form-input, textarea {
@@ -182,6 +205,12 @@
     height: 138px;
     width: 448px;
     margin: 0 0 0 0;
+    @media screen and (max-width: 479px) {
+        width: calc(80vw);
+    }
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+        width: 370px;
+    }
 }
 
 .form-comment-input {
@@ -189,9 +218,9 @@
     resize: none;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-        &:focus {
-            border: 1px solid #2196F3;
-        }
+    &:focus {
+        border: 1px solid #2196F3;
+    }
 }
 
 .checkbox {
@@ -228,6 +257,13 @@
     padding-bottom: 30px;
     align-items: center;
     position: relative;
+
+    @media screen and (max-width: 479px) {
+        width: calc(80vw);
+    }
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+        width: 370px;
+    }
 }
 
 .checkbox-total {
@@ -243,6 +279,16 @@
     letter-spacing: 0.03em;
     color: var(--text-color-modal-window);
     font-family:var(--main-font);
+    @media screen and (max-width: 479px) {
+        width: calc(80vw - 32px);
+        font-size: 2.5vw;
+    }
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+        font-size: 12px;
+        line-height: 1.16;
+
+        letter-spacing: 0.03em;
+    }
 }
 
 .agreement {
@@ -253,6 +299,15 @@
     letter-spacing: 0.03em;
     font-family:var(--main-font);
     margin: 0 0 0 0;
+    @media screen and (max-width: 479px) {
+        font-size: 2.5vw;
+    }
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+        font-size: 12px;
+        line-height: 1.16;
+
+        letter-spacing: 0.03em;
+    }
 }
 
 .button-modal-window {

@@ -284,6 +284,42 @@ img {
           animation-iteration-count: 1;
 }
 
+@media screen and (max-width: 1199px) {
+  .modal-window form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .modal-window {
+    max-width: 90%;
+    max-height: 90%;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .modal-window {
+    width: 450px;
+    height: 609px;
+  }
+}
+
+.lockScroll {
+  overflow: hidden;
+}
+
 .is-hidden {
   visibility: hidden;
   opacity: 0;
@@ -365,6 +401,18 @@ img {
   padding-bottom: 12px;
 }
 
+@media screen and (max-width: 479px) {
+  .form-title {
+    max-width: 80%;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .form-title {
+    width: 370px;
+  }
+}
+
 .form {
   display: -webkit-box;
   display: -webkit-flex;
@@ -438,6 +486,19 @@ img {
   border: 1px solid #2196F3;
 }
 
+@media screen and (max-width: 479px) {
+  .form-input {
+    width: -webkit-calc(80vw);
+    width: calc(80vw);
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .form-input {
+    width: 370px;
+  }
+}
+
 .form-input, textarea {
   outline: none;
 }
@@ -468,6 +529,19 @@ img {
   height: 138px;
   width: 448px;
   margin: 0 0 0 0;
+}
+
+@media screen and (max-width: 479px) {
+  .form-comment {
+    width: -webkit-calc(80vw);
+    width: calc(80vw);
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .form-comment {
+    width: 370px;
+  }
 }
 
 .form-comment-input {
@@ -523,6 +597,19 @@ img {
   position: relative;
 }
 
+@media screen and (max-width: 479px) {
+  .agree-box {
+    width: -webkit-calc(80vw);
+    width: calc(80vw);
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .agree-box {
+    width: 370px;
+  }
+}
+
 .checkbox-total {
   position: relative;
   margin-right: 23px;
@@ -538,6 +625,22 @@ img {
   font-family: var(--main-font);
 }
 
+@media screen and (max-width: 479px) {
+  .agree {
+    width: -webkit-calc(80vw - 32px);
+    width: calc(80vw - 32px);
+    font-size: 2.5vw;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .agree {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+  }
+}
+
 .agreement {
   color: var(--text-secondary-color);
   font-weight: normal;
@@ -546,6 +649,20 @@ img {
   letter-spacing: 0.03em;
   font-family: var(--main-font);
   margin: 0 0 0 0;
+}
+
+@media screen and (max-width: 479px) {
+  .agreement {
+    font-size: 2.5vw;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .agreement {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+  }
 }
 
 .button-modal-window {
@@ -673,7 +790,6 @@ img {
   width: 40px;
   height: 40px;
   position: absolute;
-  z-index: 2;
   overflow: hidden;
 }
 
