@@ -6,14 +6,6 @@
     ul {
         flex-wrap: wrap;
     }
-
-    @media screen and (max-width:767px) {
-  
-        
-    }
-    @media screen and (min-width: 768px) and (max-width: 1199px){
-
-    }    
     @media screen and (min-width:1200px){
         padding-top: 94px;
     }
@@ -21,19 +13,7 @@
 
 .advantages__list {
     margin: 10px;
-    @media screen and (max-width:767px) {
-        // width: 100%;
-    }
-    @media screen and (min-width: 768px) and (max-width: 1199px){
-        // width: 48%;
-    }    
-    @media screen and (min-width:1200px){
-        // width: 270px;
-        // height: 251px;
-        // margin: 10px;
-        // column-count: 4;
-    }
-
+    
     &::before {
         content: "";
         padding-top: 120px;

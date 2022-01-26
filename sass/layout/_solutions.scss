@@ -38,6 +38,16 @@
             width: 100%;
         }
     }
+
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .solutions {
+      background-image: url('solutions_desktop@2x.jpg, solutions_tablet@2x.jpg, solutions_mobile@2x.jpg ');
+    }
+  }
+
     .solutions__text {
         position: absolute;
         top: 50%;
@@ -61,9 +71,6 @@
         @media screen and (min-width: 480px) and (max-width: 767px){
             width: 360px;
         }
-        @media screen and (min-width: 768px) and (max-width: 1199px){
-
-        }    
         @media screen and (min-width:1200px){
             font-size: 44px;
             line-height: 1.36;
